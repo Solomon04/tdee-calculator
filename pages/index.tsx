@@ -307,21 +307,21 @@ export default function Home() {
                         <li className='flex items-center justify-between'>
                           <div>
                             <h4 className='font-medium text-sm'>Easy</h4>
-                            <span className='text-gray-600'>(Lose 10% of current weight)</span>
+                            <span className='text-gray-600'>(10% Deficit)</span>
                           </div>
                           <h4 className='font-medium text-sm'>{new Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(calculateCaloriesForWeightLoss(tdee, 10))}</h4>
                         </li>
                         <li className='flex items-center justify-between'>
                           <div>
                             <h4 className='font-medium text-sm'>Steady</h4>
-                            <span className='text-gray-600'>(Lose 15% of current weight)</span>
+                            <span className='text-gray-600'>(15% Deficit)</span>
                           </div>
                           <h4 className='font-medium text-sm'>{new Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(calculateCaloriesForWeightLoss(tdee, 15))}</h4>
                         </li>
                         <li className='flex items-center justify-between'>
                           <div>
                             <h4 className='font-medium text-sm'>Aggressive</h4>
-                            <span className='text-gray-600'>(Lose 25% of current weight)</span>
+                            <span className='text-gray-600'>(25% Deficit)</span>
                           </div>
                           <h4 className='font-medium text-sm'>{new Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(calculateCaloriesForWeightLoss(tdee, 25))}</h4>
                         </li>
@@ -337,23 +337,23 @@ export default function Home() {
                         <li className='flex items-center justify-between'>
                           <div>
                             <h4 className='font-medium text-sm'>Recomp</h4>
-                            <span className='text-gray-600'>(Gain 10% of current weight)</span>
+                            <span className='text-gray-600'>(5% Surplus)</span>
                           </div>
-                          <h4 className='font-medium text-sm'>{new Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(calculateCaloriesForWeightGain(tdee, 10))}</h4>
+                          <h4 className='font-medium text-sm'>{new Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(calculateCaloriesForWeightGain(tdee, 5))}</h4>
                         </li>
                         <li className='flex items-center justify-between'>
                           <div>
                             <h4 className='font-medium text-sm'>Slow Gain</h4>
-                            <span className='text-gray-600'>(Gain 15% of current weight)</span>
+                            <span className='text-gray-600'>(7.5% Surplus)</span>
                           </div>
-                          <h4 className='font-medium text-sm'>{new Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(calculateCaloriesForWeightGain(tdee, 15))}</h4>
+                          <h4 className='font-medium text-sm'>{new Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(calculateCaloriesForWeightGain(tdee, 7.5))}</h4>
                         </li>
                         <li className='flex items-center justify-between'>
                           <div>
                             <h4 className='font-medium text-sm'>Lean Bulk</h4>
-                            <span className='text-gray-600'>(Gain 25% of current weight)</span>
+                            <span className='text-gray-600'>(10% Surplus)</span>
                           </div>
-                          <h4 className='font-medium text-sm'>{new Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(calculateCaloriesForWeightGain(tdee, 25))}</h4>
+                          <h4 className='font-medium text-sm'>{new Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(calculateCaloriesForWeightGain(tdee, 10))}</h4>
                         </li>
                       </ul>
                     </div>
